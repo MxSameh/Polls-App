@@ -64,16 +64,5 @@ button:focus {
 
 /* extra styles */
 body{
-	color: #777;
-	background-color: #eee;
 	padding: 0px;
-	margin: 0;
-}
-
-h2{
-	color: orangered;
-	text-transform: uppercase;
-}
-button{
-	background-color: white;
 }
