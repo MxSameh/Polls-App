@@ -1,15 +1,23 @@
 <header>
-  <h2>Mo Polls</h2>
+  <h2 class="logo">polls</h2>
+  <img class="menu" src="./menu.svg" alt="">
 </header>
 
 <style>
   header{
-    background-color: #f7f7f7;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  h2{
-    margin: 0;
-    text-align: center;
+  .logo{
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .menu{
+    width:30px
+  }
+  .menu:hover{
+    cursor: pointer;
   }
    
 </style>

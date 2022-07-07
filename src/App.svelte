@@ -15,6 +15,9 @@ const switchTab = (e) => {
 const addPoll = ()=> {
 	activeItem = 'Current Polls'
 }
+const createPoll = () => {
+	activeItem = 'Add New Poll'
+}
 
 </script>
 
@@ -23,7 +26,7 @@ const addPoll = ()=> {
 <main>
 	<Tabs {activeItem} {items} on:switchTab={switchTab}/>
 	{#if activeItem == 'Current Polls'}
-		<PollList />
+		<PollList on:click={createPoll}/>
 	{:else if activeItem == 'Add New Poll'}
 		<CreatePollForm on:addPoll={addPoll} />
 	{/if}
@@ -35,6 +38,7 @@ const addPoll = ()=> {
 	main{
 		max-width: 960px;
 		margin:40px auto;
+		min-height: calc(100vh - (30px + 115px + 48px + 80px) ) ;
 	}
 
 </style>

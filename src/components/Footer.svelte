@@ -1,19 +1,22 @@
 <footer>
-  <div class="copyright">
-    copyright 2022 &copy;
-  </div>
+  <p class="credits">Mohamed Sameh</p>
+  <p class="copyright">2022&copy;</p>
 </footer>
 
 <style>
   footer{
-    padding: 40px;
     text-align: center;
-  }
-  .copyright{
+    width: 100%;
+    padding: 24px;
     color: #aaa;
-    font-size: 14px;
+  }
+
+  .credits{
     display: inline-block;
-    padding: 20px;
-    border-top: 1px solid #ddd;
+    padding: 16px 0;
+  }
+
+  .copyright{
+    font-size: 14px;
   }
 </style>
